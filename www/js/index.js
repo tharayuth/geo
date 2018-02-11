@@ -33,15 +33,7 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        //app.receivedEvent('deviceready');
-
-        alert("x")
-        var map = plugin.google.maps.Map.getMap(document.getElementById("map"));
-        map.one(plugin.google.maps.event.MAP_READY, function () {
-            var DEFAULT_MAP_TYPE = plugin.google.maps.MapTypeId.HYBRID
-            map.setMapTypeId(DEFAULT_MAP_TYPE);
-        });
-        alert("y") 
+        app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
