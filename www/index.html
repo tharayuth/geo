@@ -25,8 +25,8 @@
     //
     function onSuccess(position) {
         var element = document.getElementById('geolocation');
-        element.innerHTML = 'Latitude: '  + position.coords.latitude      + '<br />' +
-                            'Longitude: ' + position.coords.longitude     + '<br />' +
+        element.innerHTML = 'Lat: '  + position.coords.latitude      + '<br />' +
+                            'Lon: ' + position.coords.longitude     + '<br />' +
                             '<hr />'      + element.innerHTML;
     }
 
@@ -50,6 +50,7 @@
   </head>
   <body>
     <p id="geolocation">Watching geolocation...</p>
-        <button onclick="clearWatch();">Clear Watch</button>
+        <button onclick="clearWatch();">Clear</button>
   </body>
+  <script type="text/javascript" src="cordova.js"></script>
 </html>
