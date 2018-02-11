@@ -92,6 +92,26 @@
         <splash height="1920" platform="windows" src="www/res/screen/windows/SplashScreenPhone.scale-240.png" width="1152" />
     </platform>
     <access origin="*" />
+    <access origin="*.googleapis.com" />
+    <access origin="*.gstatic.com" />
+    <access origin="*.google.com" />
+    <access origin="maps.googleapis.com" />
+    <access origin="maps.gstatic.com" />
+    <access origin="mt0.googleapis.com" />
+    <access origin="mt1.googleapis.com" />
+    <access origin="csi.gstatic.com" />
+    <access origin="*.google.com" />
+    <access origin="*.googleapis.com" />
+    <access origin="*.gstatic.com" />
+    <access origin="*.googleusercontent.com" />
+    <access origin="google.com" subdomains="true"/>
+    <access origin="googleapis.com" subdomains="true"/>
+    <access origin="gstatic.com" subdomains="true"/>
+    <access origin="googleusercontent.com" subdomains="true"/>
+    <access origin="*://*.googleapis.com/*" subdomains="true" />
+    <access origin="*://*.gstatic.com/*" subdomains="true" />
+    <access origin="*://*.google.com/*" subdomains="true" />
+    <access origin="*://*.googleusercontent.com/*" subdomains="true" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
