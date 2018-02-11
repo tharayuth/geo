@@ -34,7 +34,20 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        
+        function initGoogleMap() {
+            map_google = new google.maps.Map(document.getElementById('map_google'), {
+                zoom: 17,
+                center: { lat: 13.743333, lng: 100.628333 }
+            });
+            infoWindow = new google.maps.InfoWindow;
+            setTimeout(function () {
+                reloadTrafficGoogleMap();
+            }, 10000);
+            reloadTrafficGoogleMap();
+            trackingLocation();
+        }
+
+        initGoogleMap();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {

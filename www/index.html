@@ -58,20 +58,7 @@
     <script type="text/javascript">
             app.initialize();
 
-            function initGoogleMap() {
-                map_google = new google.maps.Map(document.getElementById('map_google'), {
-                    zoom: 17,
-                    center: { lat: 13.743333, lng: 100.628333 }
-                });
-                infoWindow = new google.maps.InfoWindow;
-                setTimeout(function () {
-                    reloadTrafficGoogleMap();
-                }, 10000);
-                reloadTrafficGoogleMap();
-                trackingLocation();
-            }
-
-            initGoogleMap();
+            
 
     </script>
     
